@@ -3,9 +3,27 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:infra="clr-namespace:Sales.Infrastructure"
              mc:Ignorable="d"
              x:Class="Sales.App">
     <Application.Resources>
 
+        <ResourceDictionary>
+            
+            <!-- Instance Locator -->
+            <infra:InstanceLocator x:Key="Locator"/>
+            
+            <!-- Parametros , algunas veces se demora en inicializar las variables antes de llegar al codigo que las usa,
+            generando un error de "objeto no encontrado". La solucion es generar una pequeña espera o agregar mas procesos antes de tener que generar una llamada-->
+            <x:String x:Key="UrlAPI">https://jsonplaceholder.typicode.com</x:String>
+            <x:String x:Key="UrlPrefix">/photos</x:String>
+            <x:String x:Key="UrlProductsController">https://jsonplaceholder.typicode.com</x:String>
+            
+            
+            
+            
+            
+
+        </ResourceDictionary>
     </Application.Resources>
 </Application>
