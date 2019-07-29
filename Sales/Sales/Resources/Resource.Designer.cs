@@ -79,6 +79,24 @@ namespace Sales.Resources {
         }
         
         /// <summary>
+        ///   Busca una cadena traducida similar a Description.
+        /// </summary>
+        public static string Description {
+            get {
+                return ResourceManager.GetString("Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Add product description.
+        /// </summary>
+        public static string DescriptionPlaceholder {
+            get {
+                return ResourceManager.GetString("DescriptionPlaceholder", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Busca una cadena traducida similar a Error.
         /// </summary>
         public static string Error {
@@ -97,11 +115,47 @@ namespace Sales.Resources {
         }
         
         /// <summary>
+        ///   Busca una cadena traducida similar a Price.
+        /// </summary>
+        public static string Price {
+            get {
+                return ResourceManager.GetString("Price", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Enter the product price.
+        /// </summary>
+        public static string PricePlaceholder {
+            get {
+                return ResourceManager.GetString("PricePlaceholder", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Busca una cadena traducida similar a Products.
         /// </summary>
         public static string Products {
             get {
                 return ResourceManager.GetString("Products", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Remarks.
+        /// </summary>
+        public static string Remarks {
+            get {
+                return ResourceManager.GetString("Remarks", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Save.
+        /// </summary>
+        public static string Save {
+            get {
+                return ResourceManager.GetString("Save", resourceCulture);
             }
         }
         

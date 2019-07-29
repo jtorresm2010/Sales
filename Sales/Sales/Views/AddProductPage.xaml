@@ -9,11 +9,34 @@
              BindingContext="{Binding Main, Source={StaticResource Locator}}"
              Title="{i18n:Translate AddProducts}">
     <ContentPage.Content>
-        <StackLayout
+        <ScrollView
             BindingContext="{Binding AddProduct}">
-            <Label Text="Add Products"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
-        </StackLayout>
+            <StackLayout
+                Padding="10">
+                <Label Text="{i18n:Translate Description}"/>
+
+                <Entry Placeholder="{i18n:Translate DescriptionPlaceholder}"/>
+
+                <Label Text="{i18n:Translate Price}"/>
+
+                <Entry 
+                    Keyboard="Numeric"
+                    Placeholder="{i18n:Translate PricePlaceholder}"/>
+
+                <Label Text="{i18n:Translate Remarks}"/>
+
+                <Editor
+                    VerticalOptions="FillAndExpand"/>
+            
+                <ActivityIndicator/>
+            
+                <Button
+                    BackgroundColor="Navy"
+                    BorderRadius="23"
+                    HeightRequest="46"
+                    Text="{i18n:Translate Save}"
+                    TextColor="White"/>
+            </StackLayout>
+        </ScrollView>
     </ContentPage.Content>
 </ContentPage>
